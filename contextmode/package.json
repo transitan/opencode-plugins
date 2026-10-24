@@ -1,0 +1,17 @@
+{
+  "name": "opencode-contextmode",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "description": "OpenCode V2 adapter for context-mode: ctx_execute, ctx_search, ctx_index",
+  "scripts": {
+    "check": "node --check index.js && node -e \"import('./index.js').then((m) => { if (!m.default?.id) throw new Error('no plugin id') })\""
+  },
+  "dependencies": {
+    "context-mode": "1.0.169"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}
