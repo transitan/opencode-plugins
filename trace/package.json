@@ -1,0 +1,18 @@
+{
+  "name": "opencode-trace-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "description": "OpenCode V2 adapter for @opencode-trace/plugin",
+  "scripts": {
+    "check": "node --check index.js && node -e \"import('./index.js').then((m) => { if (!m.default?.id) throw new Error('no plugin id') })\""
+  },
+  "dependencies": {
+    "@opencode-trace/core": "0.0.7",
+    "@opencode-trace/plugin": "0.0.7"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}
