@@ -1,0 +1,10 @@
+{
+  "name": "opencode-bedrock-headers",
+  "version": "0.1.0",
+  "description": "Modifies Bedrock provider request headers to match the Claude CLI.",
+  "type": "module",
+  "main": "index.js",
+  "files": ["index.js", "README.md"],
+  "keywords": ["opencode", "opencode-plugin", "bedrock"],
+  "license": "MIT"
+}
